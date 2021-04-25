@@ -3,35 +3,35 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 from config import BOT_NAME as bn
 
-GROUP_MUSIC_PROBOT_IMG= "https://telegra.ph/file/70008107133ae8f4d1f1f.jpg"
+LOVER_MUSIC_BOT_IMG= "https://telegra.ph/file/a76e3f40dcc50b7696993.jpg"
 
 @Client.on_message(filters.command("start") & filters.private & ~filters.channel)
 async def start(_, message: Message):
-    await message.reply_photo(GROUP_MUSIC_PROBOT_IMG)
+    await message.reply_photo(LOVER_MUSIC_BOT_IMG)
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎵
 I am Group Music Probot, I Am an Advance And Powerful Telegram Groups Voice Chat Music Bot.
-Note:- Add @Group_music_pro and @Group_music_Probot to your group and make an admin.
+Note:- Add @LoverMusicRobot2 and @LoverOwner2 to your group and make an admin.
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 Commands 🛠", url="https://telegra.ph/Commands-04-20")
+                        "🛠 First Robot 🛠", url="https://t.me/LoverMusicRobot")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Music Lovers", url="https://t.me/Hindi_K_drama_1"
+                        "CREATOR", url="https://t.me/SarcasticLucky"
                     ),
                     InlineKeyboardButton(
-                        "💬 Support Group", url="https://t.me/Cutiepii_Support"
+                        "💬 Support Group", url="https://t.me/LoverMusicSupport"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "💁 Assistant 💁", url="https://t.me/Group_Music_Pro"
+                        "💁 Assistant 💁", url="https://t.me/LoverOwner2"
                     )],
                     [ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/Group_Music_ProBot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/LoverMusicBotBot?startgroup=true"
                     )]
             ]
         ),
@@ -45,7 +45,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🎙️ Support Group 🎙️", url="https://t.me/Cutiepii_Support")
+                        "🎙️ Support Group 🎙️", url="https://t.me/LoverMusicSupport")
                 ]
             ]
         )
