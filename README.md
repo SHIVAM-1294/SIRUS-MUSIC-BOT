@@ -1,4 +1,4 @@
-<h1 align="centre">Group Music Probot 🎵</h1>
+<h1 align="centre">Lover Music Bot 🎵</h1>
 
 ### A bot that can play music on telegram group's voice call
 
@@ -45,6 +45,6 @@
 
 ### Deploy To Heroku</h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rajkumar-27/Group-Music-Probot.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LuckyRajputOP/LoverMusicBot2.git)
 
 Use [replit](https://replit.com/@Rajkumar271/GroupMusicProbot) to get pyrogram string session
