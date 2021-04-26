@@ -27,11 +27,11 @@ Note:- Add @LoverMusicBot and @LoverMusicAssistant to your group and make an adm
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "💁 Assistant 💁", url="https://t.me/LoverMusicAssistant"
+                        "💁 Assistant 💁", url="https://t.me/LoverMusicAssistant2"
                     )],
                     [ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/LoverMusicBot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/NewLoverMusicBot?startgroup=true"
                     )],
                     [ 
                     InlineKeyboardButton(
