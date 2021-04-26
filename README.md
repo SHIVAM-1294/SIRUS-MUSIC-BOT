@@ -47,4 +47,4 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LuckyRajputOP/LoverMusicBot2.git)
 
-Use [replit](https://replit.com/@Rajkumar271/GroupMusicProbot) to get pyrogram string session
+Use [replit](https://replit.com/@LuckyRajputOP/LoverMusicBot#main.py) to get pyrogram string session
