@@ -10,7 +10,7 @@ async def start(_, message: Message):
     await message.reply_photo(LOVER_MUSIC_BOT_IMG)
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎵
-I am 𝗟𝗼𝘃𝗲𝗿𝗠𝘂𝘀𝗶𝗰𝗕𝗼𝘁, I Am an Advance And Powerful Telegram Groups Voice Chat Music Bot.
+I am 𝗟𝗼𝘃𝗲𝗿𝗠𝘂𝘀𝗶𝗰𝗕𝗼𝘁, I Am an Advance And Powerful Telegram Groups Voice Chat Music Bot.For More Type /help to know my commands.
 Note:- Add @LoverMusicBot and @LoverMusicAssistant to your group and make an admin.
         """,
         reply_markup=InlineKeyboardMarkup(
