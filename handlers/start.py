@@ -10,8 +10,8 @@ async def start(_, message: Message):
     await message.reply_photo(LOVER_MUSIC_BOT_IMG)
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎵
-I am Group Music Probot, I Am an Advance And Powerful Telegram Groups Voice Chat Music Bot.
-Note:- Add @LoverMusicRobot2 and @LoverOwner2 to your group and make an admin.
+I am 𝗟𝗼𝘃𝗲𝗿𝗠𝘂𝘀𝗶𝗰𝗕𝗼𝘁, I Am an Advance And Powerful Telegram Groups Voice Chat Music Bot.
+Note:- Add @LoverMusicBot and @LoverMusicAssistant to your group and make an admin.
         """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -27,11 +27,11 @@ Note:- Add @LoverMusicRobot2 and @LoverOwner2 to your group and make an admin.
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "💁 Assistant 💁", url="https://t.me/LoverOwner2"
+                        "💁 Assistant 💁", url="https://t.me/LoverMusicAssistant"
                     )],
                     [ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/LoverMusicBotBot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/LoverMusicBot?startgroup=true"
                     )]
             ]
         ),
@@ -40,7 +40,7 @@ Note:- Add @LoverMusicRobot2 and @LoverOwner2 to your group and make an admin.
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**💜 Group Music Probot is online**""",
+      await message.reply_text("""**💜 Lover Music Bot is online**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
