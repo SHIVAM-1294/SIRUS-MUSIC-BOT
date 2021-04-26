@@ -2,7 +2,7 @@
 
 ### A bot that can play music on telegram group's voice call
 
-# Available on telegram as @LoverMusicRobot
+# Available on telegram as @LoverMusicBot
 
 <p align="center">
   <img src="https://telegra.ph/file/a76e3f40dcc50b7696993.jpg">
