@@ -450,7 +450,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **Processing**")
+    await lel.edit("✯𝗟𝗼𝘃𝗲𝗿✯ 🎵 **Processing**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -523,7 +523,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Playing** here the song requested by {} via Group Music Probot 😜".format(
+        caption="✯𝗟𝗼𝘃𝗲𝗿✯ ▶️ **Playing** here the song requested by {} via Lover Music Bot 😜".format(
         message.from_user.mention()
         ),
     )
@@ -538,7 +538,7 @@ async def play(_, message: Message):
 )
 async def deezer(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("✯𝗟𝗼𝘃𝗲𝗿✯ 🔄 **Processing**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     usar = await USER.get_me()
@@ -565,7 +565,7 @@ async def deezer(client: Client, message_: Message):
                    #print(e)
                    #await lel.edit(
                    #    f"<b>User {user.first_name} couldn't join your group! Make sure user is not banned in group."
-                   #    "\n\nOr manually add @LoverOwner to your Group and try again</b>",
+                   #    "\n\nOr manually add @LoverMusicAssistant to your Group and try again</b>",
                    #)
                    pass
     try:
@@ -636,9 +636,9 @@ async def deezer(client: Client, message_: Message):
         loc = file_path
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
-        await res.edit_text(f"Playing [{title}]({url}) Via Deezer")
+        await res.edit_text(f"✯𝗟𝗼𝘃𝗲𝗿✯ Playing [{title}]({url}) Via Deezer")
     else:
-        await res.edit_text("▶️ Playing.....")
+        await res.edit_text("✯𝗟𝗼𝘃𝗲𝗿✯ ▶️ Playing.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
@@ -655,7 +655,7 @@ async def deezer(client: Client, message_: Message):
         chat_id=message_.chat.id,
         reply_markup=keyboard,
         photo="final.png",
-        caption=f"#️⃣ Queued at position {position}.)."
+        caption=f"✯𝗟𝗼𝘃𝗲𝗿✯ #️⃣ Queued at position {position}.)."
     ) 
     os.remove("final.png")
 
@@ -667,7 +667,7 @@ async def deezer(client: Client, message_: Message):
 )
 async def jiosaavn(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("✯𝗟𝗼𝘃𝗲𝗿✯ 🔄 **Processing**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     usar = await USER.get_me()
@@ -711,7 +711,7 @@ async def jiosaavn(client: Client, message_: Message):
     text = message_.text.split(" ", 1)
     query = text[1]
     res = lel
-    await res.edit(f"Searching 👀👀👀 for `{query}` on jio saavn")
+    await res.edit(f"✯𝗟𝗼𝘃𝗲𝗿✯ Searching 👀👀👀 for `{query}` on jio saavn")
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(
@@ -739,7 +739,7 @@ async def jiosaavn(client: Client, message_: Message):
              [
                InlineKeyboardButton(
                    text="Join Updates Channel",
-                   url='https://t.me/Techno_Ocean')
+                   url='https://t.me/LoverNetwork')
              ],
              [       
                InlineKeyboardButton(
@@ -763,12 +763,12 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"#️⃣ Queued at position {position}",
+            caption=f"✯𝗟𝗼𝘃𝗲𝗿✯ #️⃣ Queued at position {position}",
         
         )           
            
     else:
-        await res.edit_text("▶️ Playing.....")
+        await res.edit_text("✯𝗟𝗼𝘃𝗲𝗿✯ ▶️ Playing.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
