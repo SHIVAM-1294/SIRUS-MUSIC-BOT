@@ -484,6 +484,13 @@ async def play(_, message: Message):
                         url=f"{url}")
 
                 ],
+                [
+                    InlineKeyboardButton(
+                        text="Support Group 🎬",
+                        url=f"https://t.me/LoverMusicSupport")
+
+                ],
+
                 [       
                     InlineKeyboardButton(
                         text="❌ Close",
