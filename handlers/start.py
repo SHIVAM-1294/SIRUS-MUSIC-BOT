@@ -36,7 +36,7 @@ Note:- Add @LoverMusicBot and @LoverMusicAssistant to your group and make an adm
                     [ 
                     InlineKeyboardButton(
                         "➕ LoverNetwork ➕", url="https://t.me/LoverNetwork"
-                    ),
+                    )],
                     InlineKeyboardButton(
                         "💬 Quiz Group", url="https://t.me/CompetitionLevelQuizes"
                     )],
