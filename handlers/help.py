@@ -10,45 +10,31 @@ from pyrogram.types import Message
 )
 async def help_(client: Client, message: Message):
     await message.reply_text(
-        f"""🛠️Commands 🛠
+        f"""🛠️ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 🛠
 
-For all in group
+🔥🔥𝗙𝗢𝗥 𝗔𝗟𝗟 𝗜𝗡 𝗚𝗥𝗢𝗨𝗣🔥🔥
 
-/play <song name> - play song you requested
+/play <song name> - Play Song You Requested
+/dplay <song name> - play Song You Requested Via Deezer
+/splay <song name> - Play Song You Requested Via Jio Saavan
+/playlist - Show Now Playing List
+/current - Show Now Playing
+/song <song name> - Download Songs You Want Quickly
+/search <query> - Search Videos On Youtube With Details
+/deezer <song name> - Download Songs You Want Quickly Via Deezer
+/saavn <song name> - Download Songs You Want Quickly Via Saavan
+/video <song name> - Download Videoss You Want Quickly
 
-/dplay <song name> - play song you requested via deezer
+🔥🔥𝗢𝗡𝗟𝗬 𝗙𝗢𝗥 𝗔𝗗𝗠𝗜𝗡𝗦🔥🔥
 
-/splay <song name> - play song you requested via jio saavn
+/player - Open Music Player Setting Panel
+/pause - Pause Song Play
+/resume - Resume Song Play
+/skip - Play Next Song
+/end - Stop Music Play
+/userbotjoin - Invite Assistant To Your Chat
 
-/playlist - Show now playing list
-
-/current - Show now playing
-
-/song <song name> - download songs you want quickly
-
-/search <query> - search videos on youtube with details
-
-/deezer <song name> - download songs you want quickly via deezer
-
-/saavn <song name> - download songs you want quickly via saavn
-
-/video <song name> - download videos you want quickly
-
-Admins only.
-
-/player - open music player settings panel
-
-/pause - pause song play
-
-/resume - resume song play
-
-/skip - play next song
-
-/end - stop music play
-
-/userbotjoin - invite assistant to your chat
-
-• Inline search is also supported.""")
+• Inline Search Is Also Supported.""")
 
 @Client.on_message(
     filters.command("help")
@@ -57,42 +43,28 @@ Admins only.
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""🛠️Commands 🛠
+        f"""🛠️ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 🛠
 
-For all in group
+🔥🔥𝗙𝗢𝗥 𝗔𝗟𝗟 𝗜𝗡 𝗚𝗥𝗢𝗨𝗣🔥🔥
 
-/play <song name> - play song you requested
+/play <song name> - Play Song You Requested
+/dplay <song name> - play Song You Requested Via Deezer
+/splay <song name> - Play Song You Requested Via Jio Saavan
+/playlist - Show Now Playing List
+/current - Show Now Playing
+/song <song name> - Download Songs You Want Quickly
+/search <query> - Search Videos On Youtube With Details
+/deezer <song name> - Download Songs You Want Quickly Via Deezer
+/saavn <song name> - Download Songs You Want Quickly Via Saavan
+/video <song name> - Download Videoss You Want Quickly
 
-/dplay <song name> - play song you requested via deezer
+🔥🔥𝗢𝗡𝗟𝗬 𝗙𝗢𝗥 𝗔𝗗𝗠𝗜𝗡𝗦🔥🔥
 
-/splay <song name> - play song you requested via jio saavn
+/player - Open Music Player Setting Panel
+/pause - Pause Song Play
+/resume - Resume Song Play
+/skip - Play Next Song
+/end - Stop Music Play
+/userbotjoin - Invite Assistant To Your Chat
 
-/playlist - Show now playing list
-
-/current - Show now playing
-
-/song <song name> - download songs you want quickly
-
-/search <query> - search videos on youtube with details
-
-/deezer <song name> - download songs you want quickly via deezer
-
-/saavn <song name> - download songs you want quickly via saavn
-
-/video <song name> - download videos you want quickly
-
-Admins only.
-
-/player - open music player settings panel
-
-/pause - pause song play
-
-/resume - resume song play
-
-/skip - play next song
-
-/end - stop music play
-
-/userbotjoin - invite assistant to your chat
-
-• Inline search is also supported.""")
+• Inline Search Is Also Supported.""")
