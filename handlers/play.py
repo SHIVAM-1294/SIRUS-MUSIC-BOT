@@ -399,7 +399,7 @@ async def m_cb(b, cb):
 @Client.on_message(command("play") & other_filters)
 async def play(_, message: Message):
     global que
-    lel = await message.reply("✯𝗟𝗼𝘃𝗲𝗿✯ 🔄 **Processing**")
+    lel = await message.reply("✯𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱✯ 🔄 **Processing**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
     usar = await USER.get_me()
@@ -426,7 +426,7 @@ async def play(_, message: Message):
                    #print(e)
                    #await lel.edit(
                    #    f"<b>User {user.first_name} couldn't join your group! Make sure user is not banned in group."
-                   #    "\n\nOr manually add @LoverOwner to your Group and try again</b>",
+                   #    "\n\nOr manually add @TriggeredAssistant to your Group and try again</b>",
                    #)
                    pass
     try:
@@ -439,7 +439,7 @@ async def play(_, message: Message):
         return    
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
-    await lel.edit("✯𝗟𝗼𝘃𝗲𝗿✯ 🔎 **Finding**")
+    await lel.edit("✯𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱✯ 🔎 **Finding**")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -450,7 +450,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("✯𝗟𝗼𝘃𝗲𝗿✯ 🎵 **Processing**")
+    await lel.edit("✯𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱✯ 🎵 **Processing**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -487,7 +487,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="Support Group 🎬",
-                        url=f"https://t.me/LoverMusicSupport")
+                        url=f"https://t.me/TriggeredSupport")
 
                 ],
 
@@ -530,7 +530,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="✯𝗟𝗼𝘃𝗲𝗿✯ ▶️ **Playing** here the song requested by {} via Lover Music Bot 😜".format(
+        caption="✯𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱✯ ▶️ **Playing** here the song requested by {} via Lover Music Bot 😜".format(
         message.from_user.mention()
         ),
     )
@@ -545,7 +545,7 @@ async def play(_, message: Message):
 )
 async def deezer(client: Client, message_: Message):
     global que
-    lel = await message_.reply("✯𝗟𝗼𝘃𝗲𝗿✯ 🔄 **Processing**")
+    lel = await message_.reply("✯𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱✯ 🔄 **Processing**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     usar = await USER.get_me()
@@ -596,7 +596,7 @@ async def deezer(client: Client, message_: Message):
     text = message_.text.split(" ", 1)
     queryy = text[1]
     res = lel
-    await res.edit(f"Searching 👀👀👀 for `{queryy}` on deezer")
+    await res.edit(f"𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱 Searching 👀👀👀 for `{queryy}` on deezer")
     try:
         arq = ARQ("https://thearq.tech")
         r = await arq.deezer(query=queryy, limit=1)
@@ -643,9 +643,9 @@ async def deezer(client: Client, message_: Message):
         loc = file_path
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
-        await res.edit_text(f"✯𝗟𝗼𝘃𝗲𝗿✯ Playing [{title}]({url}) Via Deezer")
+        await res.edit_text(f"✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Playing [{title}]({url}) Via Deezer")
     else:
-        await res.edit_text("✯𝗟𝗼𝘃𝗲𝗿✯ ▶️ Playing.....")
+        await res.edit_text("✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ ▶️ Playing.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
@@ -662,7 +662,7 @@ async def deezer(client: Client, message_: Message):
         chat_id=message_.chat.id,
         reply_markup=keyboard,
         photo="final.png",
-        caption=f"✯𝗟𝗼𝘃𝗲𝗿✯ #️⃣ Queued at position {position}.)."
+        caption=f"✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ #️⃣ Queued at position {position}.)."
     ) 
     os.remove("final.png")
 
@@ -674,7 +674,7 @@ async def deezer(client: Client, message_: Message):
 )
 async def jiosaavn(client: Client, message_: Message):
     global que
-    lel = await message_.reply("✯𝗟𝗼𝘃𝗲𝗿✯ 🔄 **Processing**")
+    lel = await message_.reply("✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ 🔄 **Processing**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     usar = await USER.get_me()
@@ -718,7 +718,7 @@ async def jiosaavn(client: Client, message_: Message):
     text = message_.text.split(" ", 1)
     query = text[1]
     res = lel
-    await res.edit(f"✯𝗟𝗼𝘃𝗲𝗿✯ Searching 👀👀👀 for `{query}` on jio saavn")
+    await res.edit(f"✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Searching 👀👀👀 for `{query}` on jio saavn")
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(
@@ -746,7 +746,7 @@ async def jiosaavn(client: Client, message_: Message):
              [
                InlineKeyboardButton(
                    text="Join Updates Channel",
-                   url='https://t.me/LoverNetwork')
+                   url='https://t.me/TriggeredNetwork')
              ],
              [       
                InlineKeyboardButton(
@@ -770,12 +770,12 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"✯𝗟𝗼𝘃𝗲𝗿✯ #️⃣ Queued at position {position}",
+            caption=f"✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ #️⃣ Queued at position {position}",
         
         )           
            
     else:
-        await res.edit_text("✯𝗟𝗼𝘃𝗲𝗿✯ ▶️ Playing.....")
+        await res.edit_text("✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ ▶️ Playing.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
@@ -785,7 +785,7 @@ async def jiosaavn(client: Client, message_: Message):
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
         callsmusic.pytgcalls.join_group_call(message_.chat.id, file_path)
-    await res.edit("Generating Thumbnail.")
+    await res.edit("✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Generating Thumbnail.")
     await generate_cover(requested_by, sname, ssingers, sduration, sthumb)
     await res.delete()
     m = await client.send_photo(
