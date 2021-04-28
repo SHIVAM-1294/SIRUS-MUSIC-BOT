@@ -530,7 +530,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="✯𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱✯ ▶️ **Playing** here the song requested by {} via Lover Music Bot 😜".format(
+        caption="✯𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱✯ ▶️ **Playing** here the song requested by {} via Triggered Music Bot 😜".format(
         message.from_user.mention()
         ),
     )
@@ -572,7 +572,7 @@ async def deezer(client: Client, message_: Message):
                    #print(e)
                    #await lel.edit(
                    #    f"<b>User {user.first_name} couldn't join your group! Make sure user is not banned in group."
-                   #    "\n\nOr manually add @LoverMusicAssistant to your Group and try again</b>",
+                   #    "\n\nOr manually add @TriggeredAssistant to your Group and try again</b>",
                    #)
                    pass
     try:
@@ -702,7 +702,7 @@ async def jiosaavn(client: Client, message_: Message):
                    #print(e)
                    #await lel.edit(
                    #    f"<b>User {user.first_name} couldn't join your group! Make sure user is not banned in group."
-                   #    "\n\nOr manually add @LoverOwner to your Group and try again</b>",
+                   #    "\n\nOr manually add @TriggeredOwner to your Group and try again</b>",
                    #)
                    pass
     try:
