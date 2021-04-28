@@ -596,7 +596,7 @@ async def deezer(client: Client, message_: Message):
     text = message_.text.split(" ", 1)
     queryy = text[1]
     res = lel
-    await res.edit(f"𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱 Searching 👀👀👀 for `{queryy}` on deezer")
+    await res.edit(f"Searching 👀👀👀 for `{queryy}` on deezer")
     try:
         arq = ARQ("https://thearq.tech")
         r = await arq.deezer(query=queryy, limit=1)
