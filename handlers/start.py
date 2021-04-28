@@ -7,7 +7,7 @@ TRIGGERED_MUSIC_BOT_IMG= "https://telegra.ph/file/8074008f417688bddd1a6.png"
 
 @Client.on_message(filters.command("start") & filters.private & ~filters.channel)
 async def start(_, message: Message):
-    await message.reply_photo(LOVER_MUSIC_BOT_IMG)
+    await message.reply_photo(TRIGGERED_MUSIC_BOT_IMG)
     await message.reply_text(
         f"""**Hey, I'm  ✯𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱𝗠𝘂𝘀𝗶𝗰𝗕𝗼𝘁✯, An Open-Source Bot That Lets You Play Music In Your Telegram Groups.For Support Join Our Group @TriggeredSupport.
 
