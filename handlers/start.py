@@ -9,33 +9,35 @@ LOVER_MUSIC_BOT_IMG= "https://telegra.ph/file/a76e3f40dcc50b7696993.jpg"
 async def start(_, message: Message):
     await message.reply_photo(LOVER_MUSIC_BOT_IMG)
     await message.reply_text(
-        f"""**Hey, I'm {bn} 🎵
-I am 𝗟𝗼𝘃𝗲𝗿𝗠𝘂𝘀𝗶𝗰𝗕𝗼𝘁, I Am an Advance And Powerful Telegram Groups Voice Chat Music Bot.For More Type /help to know my commands.
-Note:- Add @LoverMusicBot and @LoverMusicAssistant to your group and make an admin.
+        f"""**Hey, I'm  ✯𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗲𝗱𝗠𝘂𝘀𝗶𝗰𝗕𝗼𝘁✯, An Open-Source Bot That Lets You Play Music In Your Telegram Groups.For Support Join Our Group @TriggeredSupport.
+
+ The Assistant Must Be In Your Group To Play Music In The Voice Chat Of Your Group.
+
+ Type Or Press /help To Know My Commands**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 First Robot 🛠", url="https://t.me/LoverMusicRobot")
+                        "🔥𝗖𝗿𝗲𝗮𝘁𝗼𝗿🔥", url="https://t.me/TriggeredOwner")
                   ],[
                     InlineKeyboardButton(
-                        "CREATOR", url="https://t.me/SarcasticLucky"
+                        "🔥𝗛𝗲𝗹𝗽𝗲𝗿🔥", url="https://t.me/SHIVAMIPA"
                     ),
                     InlineKeyboardButton(
-                        "💬 Support Group", url="https://t.me/LoverMusicSupport"
+                        "💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 💬", url="https://t.me/TriggeredSupport"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "💁 Assistant 💁", url="https://t.me/LoverMusicAssistant2"
+                        "💁 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 💁", url="https://t.me/TriggeredAssistant"
                     )],
                     [ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/NewLoverMusicBot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/TriggeredMusicBot?startgroup=true"
                     )],
                     [ 
                     InlineKeyboardButton(
-                        "➕ LoverNetwork ➕", url="https://t.me/LoverNetwork"
+                        "➕ TriggeredNetwork ➕", url="https://t.me/TriggeredNetwork"
                     )]
             ]
         ),
@@ -44,12 +46,12 @@ Note:- Add @LoverMusicBot and @LoverMusicAssistant to your group and make an adm
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**💜 Lover Music Bot is online**""",
+      await message.reply_text("""**💜 Triggered Music Bot is online**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🎙️ Support Group 🎙️", url="https://t.me/LoverMusicSupport")
+                        "🎙️ Support Group 🎙️", url="https://t.me/TriggeredSupport")
                 ]
             ]
         )
