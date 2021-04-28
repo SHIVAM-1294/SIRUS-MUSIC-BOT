@@ -1,11 +1,11 @@
-<h1 align="centre">Lover Music Bot 🎵</h1>
+<h1 align="centre">Triggered Music Bot 🎵</h1>
 
 ### A bot that can play music on telegram group's voice call
 
-# Available on telegram as @LoverMusicBot
+# Available on telegram as @TriggeredMusicBot
 
 <p align="center">
-  <img src="https://telegra.ph/file/a76e3f40dcc50b7696993.jpg">
+  <img src="https://telegra.ph/file/8074008f417688bddd1a6.png">
 </p>
 
 <h2> Whats new 🔥 </h2>
@@ -45,6 +45,6 @@
 
 ### Deploy To Heroku</h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LuckyRajputOP/LoverMusicBot2.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LuckyRajputOP/TriggeredMusicBot.git)
 
 Use [replit](https://replit.com/@LuckyRajputOP/LoverMusicBot#main.py) to get pyrogram string session
