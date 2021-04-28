@@ -32,7 +32,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('✯𝗟𝗼𝘃𝗲𝗿✯ 🔎 Finding the song...')
+    m = message.reply('✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ 🔎 Finding the song...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -51,7 +51,7 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "✯𝗟𝗼𝘃𝗲𝗿✯ Found Nothing.\n\nTry another keywork or maybe spell it properly."
+            "✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Found Nothing.\n\nTry another keywork or maybe spell it properly."
         )
         print(str(e))
         return
@@ -61,7 +61,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**✯𝗟𝗼𝘃𝗲𝗿✯ 🎵 Uploaded by @LoverNetwork**'
+        rep = '**✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ 🎵 Uploaded by @TriggeredNetwork**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -69,7 +69,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit('✯𝗟𝗼𝘃𝗲𝗿✯ Error')
+        m.edit('✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Error')
         print(e)
 
     try:
@@ -261,15 +261,15 @@ async def jssong(_, message):
     is_downloading = True
     text = message.text.split(None, 1)[1]
     query = text.replace(" ", "%20")
-    m = await message.reply_text("✯𝗟𝗼𝘃𝗲𝗿✯ Searching...")
+    m = await message.reply_text("✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Searching...")
     try:
         songs = await arq.saavn(query)
         sname = songs[0].song
         slink = songs[0].media_url
         ssingers = songs[0].singers
-        await m.edit("✯𝗟𝗼𝘃𝗲𝗿✯ Downloading")
+        await m.edit("✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Downloading")
         song = await download_song(slink)
-        await m.edit("✯𝗟𝗼𝘃𝗲𝗿✯ Uploading")
+        await m.edit("✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Uploading")
         await message.reply_audio(audio=song, title=sname,
                                   performer=ssingers)
         os.remove(song)
@@ -297,15 +297,15 @@ async def deezsong(_, message):
     is_downloading = True
     text = message.text.split(None, 1)[1]
     query = text.replace(" ", "%20")
-    m = await message.reply_text("✯𝗟𝗼𝘃𝗲𝗿✯ Searching...")
+    m = await message.reply_text("✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Searching...")
     try:
         songs = await arq.deezer(query, 1)
         title = songs[0].title
         url = songs[0].url
         artist = songs[0].artist
-        await m.edit("✯𝗟𝗼𝘃𝗲𝗿✯ Downloading")
+        await m.edit("✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Downloading")
         song = await download_song(url)
-        await m.edit("✯𝗟𝗼𝘃𝗲𝗿✯ Uploading")
+        await m.edit("✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Uploading")
         await message.reply_audio(audio=song, title=title,
                                   performer=artist)
         os.remove(song)
@@ -366,7 +366,7 @@ async def ytmusic(client,message: Message):
 
             if duration > 8:
                 await pablo.edit(
-                    f"✯𝗟𝗼𝘃𝗲𝗿✯ Videos longer than 8 minute(s) aren't allowed, the provided video is {duration} minute(s)"
+                    f"✯𝗧𝗿𝗶𝗴𝗴𝗴𝗲𝗿𝗲𝗱✯ Videos longer than 8 minute(s) aren't allowed, the provided video is {duration} minute(s)"
                 )
                 is_downloading = False
                 return
