@@ -5,7 +5,7 @@
 # Available on telegram as @TriggeredMusicBot
 
 <p align="center">
-  <img src="https://telegra.ph/file/8074008f417688bddd1a6.png">
+  <img src="https://telegra.ph/file/6644a6c17474b02b65da5.png">
 </p>
 
 <h2> Whats new 🔥 </h2>
