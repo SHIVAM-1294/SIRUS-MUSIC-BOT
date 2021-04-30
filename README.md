@@ -1,14 +1,14 @@
-<h1 align="centre">Triggered Music Bot 🎵</h1>
+<h1 align="centre">SIRUS MUSIC BOT 🎵</h1>
 
 ### A bot that can play music on telegram group's voice call
 
-# Available on telegram as @TriggeredMusicBot
+# Available on telegram as @SIRUSMUSICBOT
 
 <p align="center">
   <img src="https://telegra.ph/file/6644a6c17474b02b65da5.png">
 </p>
 
-<h2> Whats new 🔥 </h2>
+<h2> Whats New 🔥 </h2>
 
 - Thumbnail Support
 - Playlist Support
